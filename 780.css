@@ -1,0 +1,45 @@
+/* BEGIN LICENSE BLOCK
+This file is part of BlueAirMessage, a theme for Dotclear.
+
+Copyright (c) 2011-2015
+David Yim mail@davidyim.com
+Pierre Van Glabeke
+
+Licensed under the GPL version 2.0 license.
+A copy of this license is available in LICENSE file or at
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+END LICENSE BLOCK */
+
+pre {
+  width : 405px;
+}
+#page {
+  width : 788px;
+  background : #fff url('img/780/page2.png') repeat-y top center;
+}
+#wrapper {
+  width : 780px;
+}
+#top {
+  width : 780px;
+  background : #181818 url('img/780/top_bg.png') repeat-x left top;
+}
+#top_img {
+  width : 780px;
+  background : url('img/780/header_img.jpg') no-repeat center bottom;
+}
+#menu {
+  width : 780px;
+}
+#supranav {width:490px;}
+#main {
+  width : 525px;
+}
+#footer {
+  width : 788px;
+  background : #181818 url('img/780/footer2.png') no-repeat center top;
+}
+
+#comment-form p.field input, #comment-form p.field textarea {
+  width : 444px;
+}

@@ -1,0 +1,15 @@
+v2.5 - 20-07-2015 - Pierre Van Glabeke
+* modif css
+* ajout breadcrumb
+* héritage de thème mustek
+* dc2.8 requis
+
+v2.4 - 06-03-2015 - Pierre Van Glabeke
+* modif setting
+* modif _footer.html
+
+v2.3 - 14-02-2015 - Pierre Van Glabeke
+* ajout configurateur pour choix largeur (780 ou 990px)
+* modifs css
+* html5
+* dc2.7 requis
