@@ -1,7 +1,7 @@
 /* BEGIN LICENSE BLOCK
 This file is part of BlueAirMessage, a theme for Dotclear.
 
-Copyright (c) 2011-2015
+Copyright (c) 2011-2016
 David Yim mail@davidyim.com
 Pierre Van Glabeke
 
@@ -15,18 +15,18 @@ pre {
 }
 #page {
   width : 988px;
-  background : #fff url('img/990/page.png') repeat-y top center;
+  background : #fff url('../img/990/page.png') repeat-y top center;
 }
 #wrapper {
   width : 980px;
 }
 #top {
   width : 980px;
-  background : #181818 url('img/990/top_bg.png') repeat-x left top;
+  background : #181818 url('../img/990/top_bg.png') repeat-x left top;
 }
 #top_img {
   width : 980px;
-  background : url('img/990/header_img.jpg') no-repeat center bottom;
+  background : url('../img/990/header_img.jpg') no-repeat center bottom;
 }
 #menu {
   width : 980px;
@@ -37,7 +37,7 @@ pre {
 }
 #footer {
   width : 988px;
-  background : #181818 url('img/990/footer2.png') no-repeat center top;
+  background : #181818 url('../img/990/footer2.png') no-repeat center top;
 }
 
 #comment-form p.field input, #comment-form p.field textarea {

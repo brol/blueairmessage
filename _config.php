@@ -2,7 +2,7 @@
 /* BEGIN LICENSE BLOCK
 This file is part of BlueAirMessage, a theme for Dotclear.
 
-Copyright (c) 2011-2015
+Copyright (c) 2011-2016
 David Yim mail@davidyim.com
 Pierre Van Glabeke
 

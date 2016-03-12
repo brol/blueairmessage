@@ -2,7 +2,7 @@
 /* BEGIN LICENSE BLOCK
 This file is part of BlueAirMessage, a theme for Dotclear.
 
-Copyright (c) 2011-2015
+Copyright (c) 2011-2016
 David Yim mail@davidyim.com
 Pierre Van Glabeke
 
@@ -26,5 +26,5 @@ function blueairmessagewidth_publicHeadContent($core)
 	}
 
 	$url = $core->blog->settings->system->themes_url.'/'.$core->blog->settings->system->theme;
-	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$url."/".$style.".css\" />\n";
+	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$url."/css/".$style.".css\" />\n";
 }
