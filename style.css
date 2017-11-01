@@ -533,13 +533,15 @@ em, q {
 .dc-post .post, .dc-page .post {
   background : none;
 }
-.dc-post #navlinks {
+.dc-post #navlinks,
+.dc-page #navlinks {
   margin : 0 25px 25px 25px;
   border-bottom : 1px dotted #ccc;
   font-weight : bold;
   font-size : 1.1em;
 }
-.dc-post #navlinks a {
+.dc-post #navlinks a,
+.dc-page #navlinks a {
   font-weight : normal;
   color : #3388cc;
   display : block;
@@ -600,7 +602,7 @@ em, q {
   padding : 0;
 }
 #attachments li {
-  list-style-position : inside;
+  list-style : none;
 }
 #attachments li.audio object {margin:0;vertical-align:bottom;}
 #attachments li a {
@@ -747,4 +749,3 @@ em, q {
   margin : 10px 0 0 0;
   padding : 0;
 }
-.dc-page #navlinks {display:none;}

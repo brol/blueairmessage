@@ -1,7 +1,6 @@
 {{tpl:extends parent="post.html"}}
 
 <tpl:Block name="head-linkrel">
-	<link rel="top" href="{{tpl:BlogURL}}" title="{{tpl:lang Home}}" />
 	<link rel="contents" href="{{tpl:BlogArchiveURL}}" title="{{tpl:lang Archives}}" />
 	<tpl:EntryIf pings_active="1"><link rel="pingback" href="{{tpl:BlogXMLRPCURL}}" /></tpl:EntryIf>
 	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{tpl:BlogFeedURL type="atom"}}" />
@@ -45,16 +44,20 @@
 				<ul>
 		</tpl:AttachmentsHeader>
 					<li class="{{tpl:AttachmentType}}">
-		<tpl:AttachmentIf is_mp3="1">
-					{{tpl:include src="_mp3_player.html"}} -
-		</tpl:AttachmentIf>
-		<tpl:AttachmentIf is_flv="1">
-					{{tpl:include src="_flv_player.html"}}
-		</tpl:AttachmentIf>
-		<tpl:AttachmentIf is_flv="0">
+				<tpl:AttachmentIf is_audio="1">
+					{{tpl:include src="_audio_player.html"}}
+				</tpl:AttachmentIf>
+				<tpl:AttachmentIf is_video="1">
+					<tpl:AttachmentIf is_flv="0">
+						{{tpl:include src="_video_player.html"}}
+					{{tpl:else}}
+						{{tpl:include src="_flv_player.html"}}
+					</tpl:AttachmentIf>
+				</tpl:AttachmentIf>
+				<tpl:AttachmentIf is_audio="0" is_video="0">
 					<a href="{{tpl:AttachmentURL}}"
-					title="{{tpl:AttachmentFileName}} ({{tpl:AttachmentSize}})">{{tpl:AttachmentTitle}}</a>
-		</tpl:AttachmentIf>
+						title="{{tpl:AttachmentFileName}} ({{tpl:AttachmentSize}})">{{tpl:AttachmentTitle}}</a>
+				</tpl:AttachmentIf>
 					</li>
 		<tpl:AttachmentsFooter>
 				</ul>
@@ -198,3 +201,30 @@
 		<p id="ping-url">{{tpl:lang Trackback URL}}&nbsp;: {{tpl:EntryPingLink}}</p>
 	</tpl:EntryIf>
 </tpl:Block>
+
+<tpl:Block name="wrapper-sidebar">
+  <div id="sidebar" role="complementary">
+
+  <p id="navlinks">
+  <tpl:EntryPrevious>
+	{{tpl:lang Previous page:}}
+	<br />
+	<a href="{{tpl:EntryURL}}"
+  title="{{tpl:EntryTitle encode_html="1"}}" class="prev">&#171; {{tpl:EntryTitle}}</a></tpl:EntryPrevious>
+	<br />
+  <tpl:EntryNext>
+	{{tpl:lang Next page:}}
+	<br />
+	<a href="{{tpl:EntryURL}}"
+  title="{{tpl:EntryTitle encode_html="1"}}" class="next">{{tpl:EntryTitle}} &#187;</a></tpl:EntryNext>
+  </p>
+
+    <div id="blognav">
+    {{tpl:Widgets type="nav"}}
+		</div> <!-- End #blognav -->
+
+		<div id="blogextra">
+		{{tpl:Widgets type="extra"}}
+		</div> <!-- End #blogextra -->
+	</div>
+</tpl:Block>	<!-- wrapper-sidebar -->

@@ -1,29 +1,45 @@
+# Language: Français
+# Module: blueairmessage - 2.6
+# Date: 2017-11-01 15:18:21
+# Translated with translater 2017.05.10
+
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: blueairmessage 2.6\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: brol <contact@brol.info>\n"
+"PO-Revision-Date: 2017-11-01T15:18:21+00:00\n"
+"Last-Translator: brol\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-msgid "Previous entry:"
-msgstr "Billet précédent :"
+#: _config.php:74
+msgid "Display width:"
+msgstr "Largeur affichée :"
 
-msgid "Next entry:"
-msgstr "Billet suivant :"
-
-msgid "Syndicate"
-msgstr "Abonnement"
-
+#: tpl/_footer.html:4
 msgid "Theme"
 msgstr "Thème"
 
-msgid "Customization"
-msgstr "Personnalisation"
+#: tpl/_top.html:22
+msgid "Syndicate"
+msgstr "Abonnement"
 
-msgid "Display width:"
-msgstr "Largeur affichée :"
+#: tpl/page.html:210
+msgid "Previous page:"
+msgstr "Page précédente :"
+
+#: tpl/page.html:216
+msgid "Next page:"
+msgstr "Page suivante :"
+
+#: tpl/post.html:251
+msgid "Previous entry:"
+msgstr "Billet précédent :"
+
+#: tpl/post.html:257
+msgid "Next entry:"
+msgstr "Billet suivant :"
+
