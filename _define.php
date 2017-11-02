@@ -16,7 +16,7 @@ $this->registerModule(
 	/* Name */			"Blue Air Message",
 	/* Description*/		"Deux largeurs et un menu",
 	/* Author */			"David Yim, Pierre Van Glabeke",
-	/* Version */			'2.6',
+	/* Version */			'2.6.1',
 	array(
 		'type'		=>		'theme',
 		'tplset' => 'mustek',
