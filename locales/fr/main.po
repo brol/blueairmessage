@@ -15,27 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: tpl/_footer.html:4
-msgid "Theme"
-msgstr "Thème"
-
-#: tpl/_top.html:22
-msgid "Syndicate"
-msgstr "Abonnement"
-
-#: tpl/page.html:210
-msgid "Previous page:"
-msgstr "Page précédente :"
-
-#: tpl/page.html:216
-msgid "Next page:"
-msgstr "Page suivante :"
-
-#: tpl/post.html:251
-msgid "Previous entry:"
-msgstr "Billet précédent :"
-
-#: tpl/post.html:257
-msgid "Next entry:"
-msgstr "Billet suivant :"
+#: _config.php:74
+msgid "Display width:"
+msgstr "Largeur affichée :"
 
