@@ -16,10 +16,10 @@ $this->registerModule(
 	/* Name */			"Blue Air Message",
 	/* Description*/		"Deux largeurs et un menu",
 	/* Author */			"David Yim, Pierre Van Glabeke",
-	/* Version */			'2.6.2',
+	/* Version */			'2.7',
 	array(
 		'type'		=>		'theme',
 		'tplset' => 'mustek',
-		'dc_min' => '2.9'
+		'dc_min' => '2.15'
 	)
 );
