@@ -1,14 +1,15 @@
 # Language: Français
-# Module: blueairmessage - 2.6.1
-# Date: 2017-11-11 19:34:15
-# Translated with translater 2017.05.10
+# Module: blueairmessage - 2.8
+# Date: 2022-12-26 15:21:18
+# Author: Pierre Van Glabeke
+# Translated with translater 2022.12.22
 
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
-"Project-Id-Version: blueairmessage 2.6.1\n"
+"Project-Id-Version: blueairmessage 2.8\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2017-11-11T19:34:15+00:00\n"
+"PO-Revision-Date: 2022-12-26T15:21:18+00:00\n"
 "Last-Translator: brol\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"

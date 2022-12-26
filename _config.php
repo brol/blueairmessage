@@ -13,18 +13,18 @@ END LICENSE BLOCK */
 
 if (!defined('DC_CONTEXT_ADMIN')) { return; }
 
-global $core;
+dcCore::app();
 
 //PARAMS
 
 # Translations
-l10n::set(dirname(__FILE__).'/locales/'.$_lang.'/main');
+l10n::set(__DIR__ . '/locales/' . dcCore::app()->lang . '/main');
 
 # Default values
 $default_width = '780';
 
 # Settings
-$my_width = $core->blog->settings->themes->blueairmessage_width;
+$my_width = dcCore::app()->blog->settings->themes->blueairmessage_width;
 
 # Width type
 $blueairmessage_width_combo = array(
@@ -38,7 +38,7 @@ if (!empty($_POST))
 {
 	try
 	{
-		$core->blog->settings->addNamespace('themes');
+		dcCore::app()->blog->settings->addNamespace('themes');
 
 		# Width type
 		if (!empty($_POST['blueairmessage_width']) && in_array($_POST['blueairmessage_width'],$blueairmessage_width_combo))
@@ -50,19 +50,19 @@ if (!empty($_POST))
 			$my_width = $default_width;
 
 		}
-		$core->blog->settings->themes->put('blueairmessage_width',$my_width,'string','Width to display',true);
+		dcCore::app()->blog->settings->themes->put('blueairmessage_width',$my_width,'string','Width to display',true);
 
 		// Blog refresh
-		$core->blog->triggerBlog();
+		dcCore::app()->blog->triggerBlog();
 
 		// Template cache reset
-		$core->emptyTemplatesCache();
+		dcCore::app()->emptyTemplatesCache();
 
 		dcPage::success(__('Theme configuration has been successfully updated.'),true,true);
 	}
 	catch (Exception $e)
 	{
-		$core->error->add($e->getMessage());
+		dcCore::app()->error->add($e->getMessage());
 	}
 }
 

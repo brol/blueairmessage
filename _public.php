@@ -13,18 +13,18 @@ END LICENSE BLOCK */
 
 if (!defined('DC_RC_PATH')) { return; }
 
-l10n::set(dirname(__FILE__).'/locales/'.$_lang.'/public');
+l10n::set(dirname(__FILE__) . '/locales/' . dcCore::app()->lang. '/public');
 
 # appel css largeurs (780.css ou 990.css)
-$core->addBehavior('publicHeadContent','blueairmessagewidth_publicHeadContent');
+dcCore::app()->addBehavior('publicHeadContent','blueairmessagewidth_publicHeadContent');
 
-function blueairmessagewidth_publicHeadContent($core)
+function blueairmessagewidth_publicHeadContent()
 {
-	$style = $core->blog->settings->themes->blueairmessage_width;
-	if (!preg_match('/^780|990$/',$style)) {
+	$style = dcCore::app()->blog->settings->themes->blueairmessage_width;
+	if (!preg_match('/^780|990$/', (string) $style)) {
 		$style = '780';
 	}
 
-	$url = $core->blog->settings->system->themes_url.'/'.$core->blog->settings->system->theme;
+	$url = dcCore::app()->blog->settings->system->themes_url.'/'.dcCore::app()->blog->settings->system->theme;
 	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$url."/css/".$style.".css\" />\n";
 }
