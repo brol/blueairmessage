@@ -13,8 +13,6 @@ END LICENSE BLOCK */
 
 if (!defined('DC_CONTEXT_ADMIN')) { return; }
 
-dcCore::app();
-
 //PARAMS
 
 # Translations
