@@ -1,3 +1,7 @@
+v2.8.2 - 10/03/2023 - Pierre Van Glabeke
+* modif html/css
+* dc2.26 requis
+
 v2.8.1 - 12/01/2023 - Pierre Van Glabeke
 * modif blocs licence
 
